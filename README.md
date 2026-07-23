@@ -79,6 +79,7 @@ Five additional features were created to capture more meaningful borrower charac
 * `loan_to_emp_length` = Loan amount / (Employment length + 1)
 * `income_to_loan` = Annual income / (Loan amount + 1)
 * `age_group` = Age categorized into four groups (18–25, 26–35, 36–50, 50+)
+<img width="890" height="690" alt="image" src="https://github.com/user-attachments/assets/ed098bfb-b5ce-4475-a4dd-1714b77a8af8" />
 
 ---
 
@@ -104,6 +105,7 @@ Different strategies were used depending on the model type:
     * `scale_pos_weight` (XGBoost)
 
 Tree-based models typically benefit less from synthetic oversampling and may overfit when SMOTE is applied.
+<img width="954" height="860" alt="image" src="https://github.com/user-attachments/assets/71dcb9cd-4d18-43b3-8dea-eacc216ded96" />
 
 ---
 
@@ -116,7 +118,8 @@ Tree-based models typically benefit less from synthetic oversampling and may ove
 | Random Forest            |        0.930 |
 | **XGBoost (Best Model)** |    **0.946** |
 
-Accuracy was intentionally not emphasized because it can be misleading on imbalanced datasets. For example, predicting every applicant as "non-default" would already achieve approximately **78% accuracy** while failing to identify actual defaults.
+<img width="613" height="547" alt="image" src="https://github.com/user-attachments/assets/bc60e977-1726-49f8-af29-3d9b10391f89" />
+
 
 ---
 
@@ -158,14 +161,9 @@ No evidence of significant target leakage (e.g., one feature contributing over 5
 
 ### 7. Streamlit Application
 
-A user-friendly **Streamlit** interface was developed to simulate a real bank loan application.
+<img width="1470" height="831" alt="image" src="https://github.com/user-attachments/assets/e5a4ad72-0876-4b53-a015-6f1a7bd60d9b" />
 
-Users can:
-
-* Enter applicant information through an interactive form
-* Receive a predicted probability of default
-* View the final credit decision based on the optimized threshold
-* Explore model outputs in an intuitive interface
+<img width="1470" height="831" alt="image" src="https://github.com/user-attachments/assets/fadc8477-3d76-46ad-ba8d-7657b57e5321" />
 
 ---
 
@@ -251,6 +249,9 @@ Ham kolonlardan 5 yeni değişken türetildi:
 - `income_to_loan` = gelir / (kredi tutarı + 1)
 - `age_group` = yaş kategorik gruplara ayrıldı (18-25, 26-35, 36-50, 50+)
 
+<img width="890" height="690" alt="image" src="https://github.com/user-attachments/assets/092981d1-6def-4f3d-9bdf-9964c4cf67d2" />
+
+
 ### 3) Dengesiz Veri Yönetimi
 - Train/test **stratify** ile bölündü, test seti gerçek dünya dağılımını korudu
 - **SMOTE sadece train setine** uygulandı (test setine asla dokunulmadı —
@@ -260,6 +261,8 @@ Ham kolonlardan 5 yeni değişken türetildi:
 - Ağaç tabanlı modeller (Random Forest, XGBoost) → `class_weight="balanced"` /
   `scale_pos_weight` ile orijinal veri kullanıldı (ağaç modelleri SMOTE'tan
   daha az fayda görür, hatta overfit riski artırabilir)
+<img width="954" height="860" alt="image" src="https://github.com/user-attachments/assets/6442d390-72ea-4739-b194-d5f26bb8bcf6" />
+
 
 ### 4) Model Karşılaştırması
 
@@ -270,8 +273,8 @@ Ham kolonlardan 5 yeni değişken türetildi:
 | Random Forest | 0.930 |
 | **XGBoost (en iyi)** | **0.946** |
 
-Accuracy bilinçli olarak öne çıkarılmadı — dengesiz veride yanıltıcıdır (her
-zaman "default değil" tahmin eden bir model bile %78 accuracy verir).
+<img width="613" height="547" alt="image" src="https://github.com/user-attachments/assets/72799780-3a54-4d66-84b5-f82c14496110" />
+
 
 ### 5) Threshold Seçimi (Cost-Based)
 0.5 gibi keyfi bir varsayılan reddedildi. Bunun yerine, maliyet matrisi
@@ -291,6 +294,8 @@ birden fazla bağımsız risk faktörüne dayandığını gösteriyor. Ciddi bir
 leakage (örn. %50+) tespit edilmedi.
 
 ### 7) Arayüz 
+<img width="1470" height="831" alt="image" src="https://github.com/user-attachments/assets/7016e687-90a7-429a-8360-6502301ffe83" />
+<img width="1470" height="831" alt="image" src="https://github.com/user-attachments/assets/311bfac8-0368-44b8-83ef-36b182aaa183" />
 
 
 ## Kullanılan Teknolojiler
