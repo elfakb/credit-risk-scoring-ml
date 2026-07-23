@@ -2,6 +2,8 @@
 
 An end-to-end credit risk prediction project built on the Kaggle **Credit Risk Dataset**, featuring imbalanced data handling, comparison of four machine learning models (Logistic Regression, KNN, Random Forest, and XGBoost), SHAP-based model explainability, and a Streamlit application for bank loan application form.
 
+# Demo Link
+https://credit-risk-scoring-ml-98juoenuiq5l5dnb8q3ncm.streamlit.app/
 ## Project Structure
 
 ```text
@@ -186,6 +188,9 @@ Kaggle "Credit Risk Dataset" üzerine kurulmuş, dengesiz veri yönetimi, 4 mode
 karşılaştırması (Logistic Regression, KNN, Random Forest, XGBoost), SHAP ile
 açıklanabilirlik analizi ve gerçek bir banka başvuru formuna benzer Streamlit
 arayüzü içeren uçtan uca kredi risk tahmin projesi.
+
+## Demo Linki
+https://credit-risk-scoring-ml-98juoenuiq5l5dnb8q3ncm.streamlit.app/
 
 ## Proje Yapısı
 
